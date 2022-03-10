@@ -643,4 +643,9 @@ extern "C" {
     /// [`bringToBack`](https://leafletjs.com/reference-1.7.1.html#path-bringtoback)
     #[wasm_bindgen(method)]
     pub fn bringToBack(this: &Path);
+
+    /// [`ImageOverlay`](https://leafletjs.com/reference-1.7.1.html#image-overlay)
+    #[derive(Debug)]
+    #[wasm_bindgen(extends = Layer)]
+    pub type ImageOverlay;
 }
