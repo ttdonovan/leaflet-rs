@@ -646,7 +646,6 @@ extern "C" {
 
     /// [`ImageOverlay`](https://leafletjs.com/reference-1.7.1.html#image-overlay)
     #[derive(Debug)]
-    #[wasm_bindgen(extends = Layer)]
     pub type ImageOverlay;
 
     #[wasm_bindgen(constructor, js_namespace = L)]
