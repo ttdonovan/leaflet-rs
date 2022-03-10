@@ -648,4 +648,10 @@ extern "C" {
     #[derive(Debug)]
     #[wasm_bindgen(extends = Layer)]
     pub type ImageOverlay;
+
+    #[wasm_bindgen(constructor, js_namespace = L)]
+    pub fn new(image_url: &str, bounds: &LatLngBounds, options: &JsValue) -> ImageOverlay;
+
+    #[wasm_bindgen(method)]
+    pub fn addTo(this: &ImageOverlay, map: &Map);
 }
