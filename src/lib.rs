@@ -5,6 +5,13 @@ use web_sys::HtmlElement;
 #[wasm_bindgen]
 extern "C" {
 
+    // CRS
+    #[derive(Debug)]
+    pub type CRS;
+
+    #[wasm_bindgen(js_namespace = CRS)]
+    pub type Simple;
+
     // mapboxGl
     #[derive(Debug)]
     pub type mapboxGL;
